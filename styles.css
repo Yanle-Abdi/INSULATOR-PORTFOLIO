@@ -53,14 +53,14 @@ li {
   justify-content: centre; /* Align to left */
   align-items: center;
   gap: 10px;
-  max-width: 1200px; /* Allow wide layout */
+  max-width: 1300px; /* Allow wide layout */
   margin: 0 auto;
   padding: 20px;
 }
 
 .gallery img {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   height: 400px;
   object-fit: cover; /* Proper image scaling */
   border-radius: 15px;
