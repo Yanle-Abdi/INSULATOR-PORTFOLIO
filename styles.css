@@ -4,114 +4,69 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Alegreya', serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Alegreya", serif;
   background: black;
 }
 
+/* Header */
 .header {
   text-align: left;
   text-transform: uppercase;
   padding: 15px;
   background-color: black;
   color: #ffffff;
-
 }
 
-h2 {
-  font-size: 1.00rem;
-   color: rgb(7, 245, 245);
-   text-align: left;
-    color: rgb(255, 254, 254);
-  margin: 0;
-}
-
-h3 {
-  font-size: 1.00rem;
-   color: rgb(7, 245, 245);
-   text-align: center;
-    color: rgb(255, 254, 254);
-  margin: 0;
-}
-
-h4 {
-  font-size: 1.00rem;
-   color: rgb(7, 245, 245);
-   text-align: center;
-    color: rgb(255, 254, 254);
-  margin: 0;
-}
-
-h5 {
-  font-size: 1.00rem;
-   color: rgb(7, 245, 245);
-   text-align: center;
-    color: rgb(255, 254, 254);
-  margin: 0;
-}
-
-h6 {
-  font-size: 1.00rem;
-   color: rgb(7, 245, 245);
-   text-align: center;
-    color: rgb(255, 254, 254);
-  margin: 0;
-}
-
-h7 {
-  font-size: 1.00rem;
-   color: rgb(7, 245, 245);
-   text-align: left;
-    color: rgb(255, 254, 254);
-  margin: 0;
-}
-
-h8 {
-  font-size: 1.00rem;
-   color: rgb(7, 245, 245);
-   text-align: left;
-    color: rgb(255, 254, 254);
+/* Headings */
+h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+  color: rgb(255, 254, 254);
+  text-align: center;
   margin: 0;
 }
 
 strong {
-    font-size: larger;
-    color: rgb(7, 245, 245);
+  font-size: larger;
+  color: rgb(7, 245, 245);
 }
 
+/* Lists */
 ul {
-  max-width: 150px;
-  margin: 0 auto px auto;
+  max-width: 1000px; /* Wider content area */
+  margin: 0 auto;
+  padding: 0 20px;
   text-align: left;
   line-height: 1.5;
 }
 
 li {
-  margin: 5px 100;
+  margin: 5px 0;
   color: #ffffff;
 }
 
+/* Gallery */
 .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: left;
-  align-items: centre;
+  justify-content: flex-start; /* Align to left */
+  align-items: center;
   gap: 10px;
-  max-width: 150px;
+  max-width: 1200px; /* Allow wide layout */
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 20px;
 }
 
 .gallery img {
   width: 100%;
   max-width: 400px;
   height: 400px;
-  object-fit: row;
+  object-fit: cover; /* Proper image scaling */
   border-radius: 15px;
 }
 
 .gallery::after {
   content: "";
-  width: 0px;
+  flex: auto;
 }
