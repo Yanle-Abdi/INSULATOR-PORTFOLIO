@@ -11,7 +11,7 @@ body {
 
 /* Header */
 .header {
-  text-align: left;
+  text-align: centre;
   text-transform: uppercase;
   padding: 15px;
   background-color: black;
@@ -50,7 +50,7 @@ li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Align to left */
+  justify-content: centre; /* Align to left */
   align-items: center;
   gap: 10px;
   max-width: 1200px; /* Allow wide layout */
